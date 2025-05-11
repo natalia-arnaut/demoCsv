@@ -1,23 +1,45 @@
-<html xmlns="http://www.w3.org/1999/html"><head>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>MediCore Demo</title>
     <style>
-        div {
+        form div {
             padding-top: 200px;
             padding-left: 20px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
         }
+        #logodiv {
+            padding-top: 20px;
+        }
+        #logo {
+            background-image: url(https://medicore.nl/wp-content/themes/stuurlui/assets/img/medicore-logo-rgb.png);
+            height: 55px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            float: left;
+            margin: 0 1.5rem 0 0;
+            overflow: hidden;
+            text-indent: -99rem;
+            width: 175px;
+        }
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+        }
     </style>
-</head> <body>
+</head>
+<body>
+<div id="logodiv"><a id="logo" href="https://medicore.nl">Medicore</a></div>
 <form method="POST" >
-<div>Please select the employee name:
+<div>
+    This is a demo assesment. With the help of the form it is possible to get the CSV with the transport compensations for the current year for an employee.<br/><br/>
+    Please select the employee name:
     <select name="employee">
-        <option>Paul</option>
-        <option>Martin</option>
-        <option>Jeroen</option>
-        <option>Tineke</option>
-        <option>Arnout</option>
-        <option>Matthijs</option>
-        <option>Rens</option>
+        {{{employeeOptions}}}
     </select> <br/><br/>
     <input type="submit" value="Get the year overview"/>
 </div>

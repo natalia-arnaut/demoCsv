@@ -8,4 +8,4 @@ services:
       - "443:443"
     restart: on-failure
     volumes:
-      - ./src:/var/www/html
+      - ./:/var/www/html

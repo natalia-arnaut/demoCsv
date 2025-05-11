@@ -1,4 +1,4 @@
-Employee;Transport Distance (km/one way);Workdays per week
+Employee;Transport;Distance (km/one way);Workdays per week
 Paul;Car;60;5
 Martin;Bus;8;4
 Jeroen;Bike;9;5
